@@ -1,5 +1,18 @@
 # Vue 3 + TypeScript + Vite
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Vue 3 + TypeScript + Pinia auth setup with:
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+url - https://dummyjson.com/auth
+
+✅ Token-based login
+✅ Auto-refresh + localStorage sync
+✅ Axios interceptors for secure session handling
+✅ Auto redirect on token expiration
+
+Detects a 401 Unauthorized response.
+Clears auth state and local storage.
+Redirects the user to /login.
+Auth token stored and restored from localStorage
+Type-safe Pinia store
+Global Axios auth header
+Persistent auth even after refresh
